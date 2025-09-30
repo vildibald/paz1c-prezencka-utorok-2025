@@ -33,7 +33,7 @@ class StudentServiceTest {
 
         StudentService studentService = new StudentService(students);
 
-        var got = studentService.podielChlapcov();
+        var got = studentService.ratioOfMales();
         var expected = 2.0/3;
 
         assertEquals(expected, got);
