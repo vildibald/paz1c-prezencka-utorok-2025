@@ -9,7 +9,7 @@ public class StudentService {
         this.studenti = studenti;
     }
 
-    public double podielChlapcov(){
+    public double ratioOfMales(){
         int podiel = 0;
         for(Student student : studenti){
             if (student.pohlavie() == Sex.MALE)
