@@ -7,12 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StudentServiceTest {
 
+    private StudentService studentService;
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void testPodielChlapcov() {
         var students = List.of(
                 new Student(1L,
                         "Lukas",
@@ -31,7 +28,12 @@ class StudentServiceTest {
                         LocalDate.of(2004,10,25))
         );
 
-        StudentService studentService = new StudentService(students);
+        studentService = new StudentService(students);
+
+    }
+
+    @org.junit.jupiter.api.Test
+    void testPodielChlapcov() {
 
         var got = studentService.ratioOfMales();
         var expected = 2.0/3;
