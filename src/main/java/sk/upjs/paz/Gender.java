@@ -1,6 +1,6 @@
 package sk.upjs.paz;
 
-public enum Sex {
+public enum Gender {
     MALE,
     FEMALE,
     OTHER,

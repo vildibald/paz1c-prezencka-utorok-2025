@@ -12,7 +12,7 @@ public class StudentService {
     public double ratioOfMales(){
         int podiel = 0;
         for(Student student : studenti){
-            if (student.pohlavie() == Sex.MALE)
+            if (student.pohlavie() == Gender.MALE)
                 ++podiel;
         }
         return (double) podiel/ studenti.size();

@@ -14,17 +14,17 @@ class StudentServiceTest {
                 new Student(1L,
                         "Lukas",
                         "Kovac",
-                        Sex.MALE,
+                        Gender.MALE,
                         LocalDate.of(2003,7,23)),
                 new Student(2L,
                         "Peto",
                         "Svetly",
-                        Sex.MALE,
+                        Gender.MALE,
                         LocalDate.of(2002,6,21)),
                 new Student(3L,
                         "Daniela",
                         "Zimna",
-                        Sex.FEMALE,
+                        Gender.FEMALE,
                         LocalDate.of(2004,10,25))
         );
 
